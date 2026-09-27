@@ -1,0 +1,34 @@
+# This repository is a portfolio showcase, not a copy of the full UE project.
+# Keep the original project files locally; do not publish generated or licensed assets.
+/Binaries/
+/Build/
+/Config/
+/Content/
+/DerivedDataCache/
+/Intermediate/
+/Saved/
+/backup_before_*/
+/cesium-request-cache.sqlite
+/WaterSimTest.uproject
+
+# Local one-off scripts, exports, and backups in the project root.
+/*.bat
+/*.copy
+/*.ps1
+/*.py
+/*.t3d
+
+# Generated plugin files and assets outside the original C++ source.
+/Plugins/FlyControllerPlugins/Binaries/
+/Plugins/FlyControllerPlugins/Intermediate/
+/Plugins/FlyControllerPlugins/Resources/
+
+# Avoid accidentally committing large binaries or Unreal assets later.
+*.exe
+*.pdb
+*.sqlite
+*.uasset
+*.umap
+*.zip
+*.mp4
+*.mov
