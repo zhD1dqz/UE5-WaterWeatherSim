@@ -6,47 +6,37 @@ This is a **visualization and interaction project**, not a scientifically valida
 
 ## Project gallery
 
-The gallery leads with weather, then shows wave response, the complete interface, and time-of-day lighting. Capture the **running application**, not the Unreal Editor. Save PNG screenshots in `docs/images/` with the exact filenames below. The image links will appear after you add those files to the repository.
+The screenshots focus on three weather conditions, two ocean states, and the changing position of the sun throughout the day. They show the **running application**, not the Unreal Editor. Put the PNG files in `docs/images/` using the exact filenames below; the images will appear here once those files are added to the repository.
 
-For meaningful comparisons, keep the camera framing and resolution the same within each group. Wait for Cesium terrain and buildings to finish loading, hide the panel for scene comparisons, and avoid debug messages or performance warnings. A 16:9 frame is recommended.
+For clear comparisons, use similar framing within each group, let the terrain and buildings finish loading, and hide the UI panel. Keep the weather and wave settings fixed for the time-of-day sequence so the lighting change is easy to see.
 
-### Weather and scene
+### Weather conditions
 
-`01-clear-weather.png` — Main portfolio image: a wide, unobstructed view of the coast, ocean, sky, terrain, and buildings in clear weather.
+Clear skies, cloud cover, and ordinary rain show how the atmosphere changes the same scene. Files: `01-clear-weather.png`, `02-cloudy-weather.png`, and `03-rainy-weather.png`.
 
-![Coastal scene in clear weather](docs/images/01-clear-weather.png)
+![Coastal scene under clear skies](docs/images/01-clear-weather.png)
 
-`02-rainy-weather.png` and `03-alternate-weather.png` — Use the **same camera angle and time of day** as the main image. For the third image, choose another available preset with a visibly different atmosphere, such as overcast or stormy weather.
-
-| Rainy weather | Another weather condition |
+| Cloudy | Rainy weather |
 | --- | --- |
-| ![Same coastal scene in rainy weather](docs/images/02-rainy-weather.png) | ![Same coastal scene in another weather condition](docs/images/03-alternate-weather.png) |
+| ![Cloudy coastal scene](docs/images/02-cloudy-weather.png) | ![Coastal scene in the rain](docs/images/03-rainy-weather.png) |
 
-### Ocean-wave response
+### Ocean-wave comparison
 
-`04-calm-waves.png` and `05-strong-waves.png` — Frame the water from the same camera position, under the same weather and lighting. Show a restrained wave setting first, then a clearly stronger setting after pressing **Apply**.
+These two views contrast a relatively calm surface with much stronger waves. Files: `04-calm-waves.png` and `05-strong-waves.png`.
 
-| Calm waves | Stronger waves |
+| Calm waves | Strong waves |
 | --- | --- |
-| ![Ocean with restrained waves](docs/images/04-calm-waves.png) | ![Ocean with stronger waves](docs/images/05-strong-waves.png) |
-
-### Interface and controls
-
-`06-control-panel.png` — Show the open control panel clearly enough to read the time and weather controls, ocean-wave sliders, **Apply**, the **Camera Speed** slider, and the show/hide, **Settings**, and **Exit** controls. If everything does not fit legibly in one frame, prioritize a readable view rather than shrinking the image.
-
-![Full weather, ocean, and camera control panel](docs/images/06-control-panel.png)
-
-`07-settings-panel.png` — Open **Settings** and capture the options shown there. Together, these two images document the available UI functions.
-
-![Application settings panel](docs/images/07-settings-panel.png)
+| ![Ocean with calm waves](docs/images/04-calm-waves.png) | ![Ocean with strong waves](docs/images/05-strong-waves.png) |
 
 ### Time-of-day lighting
 
-`08-morning-light.png` and `09-late-afternoon-light.png` — Use the same camera angle, weather, and wave settings. Include terrain or buildings that cast visible shadows, so the change in sun position and lighting is clear rather than showing only a different sky color.
+The sequence follows the sun from the moment it rises to noon and sunset, then shows the scene at midnight. The same scene framing helps reveal changes in sun position, surface highlights, and shadows. Files: `06-sunrise.png`, `07-noon.png`, `08-sunset.png`, and `09-midnight.png`.
 
-| Morning | Late afternoon |
+| Sunrise | Noon |
 | --- | --- |
-| ![Morning sun position and shadows](docs/images/08-morning-light.png) | ![Late-afternoon sun position and shadows](docs/images/09-late-afternoon-light.png) |
+| ![Coastal scene just after sunrise](docs/images/06-sunrise.png) | ![Coastal scene at noon](docs/images/07-noon.png) |
+| **Sunset** | **Midnight** |
+| ![Coastal scene at sunset](docs/images/08-sunset.png) | ![Coastal scene at midnight](docs/images/09-midnight.png) |
 
 ## What the project demonstrates
 
@@ -76,7 +66,7 @@ The Date and Location controls from the underlying weather widget are intentiona
 
 1. Download the Windows build ZIP from this repository's **Releases** section, if a release has been published.
 2. Extract the **entire** archive to a folder. Keep the executable and its accompanying folders together.
-3. Run `WaterSimTest.exe` inside the extracted `Windows` folder.
+3. Run `WaterSimTest.exe` inside the extracted `UE5-WaterWeatherSim` folder.
 
 A 64-bit Windows PC with a GPU capable of running an Unreal Engine 5.6 scene is required. Performance depends on the hardware, display resolution, and graphics settings. Cesium terrain and building tiles may need an internet connection and valid service credentials; if they cannot load, the geospatial part of the scene may appear incomplete. The packaged application is a folder-based build, **not** a standalone `.exe` that can be moved by itself.
 
