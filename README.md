@@ -84,7 +84,7 @@ A 64-bit Windows PC with a GPU capable of running an Unreal Engine 5.6 scene is 
 
 This public portfolio repository contains the project documentation, the screenshot gallery, and the original **FlyViewer** C++ plugin source. The plugin implements the fly-camera movement, mouse-look interaction, and 1×–10× camera-speed control. Its source is under `Plugins/FlyControllerPlugins/Source/FlyViewer/`, with the plugin descriptor at `Plugins/FlyControllerPlugins/FlyViewer.uplugin`.
 
-The full Unreal Engine 5.6 editor project is **not included**. In particular, this repository omits the level, Blueprint widgets, licensed Fluid Flux and Ultra Dynamic Sky assets, Cesium-related data and credentials, and generated build files. Therefore, cloning the repository alone will **not** open or rebuild the complete scene. Use the packaged Windows release to experience the finished application, if one has been published.
+The full Unreal Engine 5.6 editor project is **not included**. In particular, this repository omits the level, Blueprint widgets, licensed Fluid Flux and Ultra Dynamic Sky assets, Cesium-related data and credentials, and generated build files. Therefore, cloning the repository alone will **not** open or rebuild the complete scene. Use the packaged Windows release to experience the finished application, if one has been published. **The Release provides a runnable application, not the complete editable Unreal Engine project.**
 
 ## Notes for reviewers
 
